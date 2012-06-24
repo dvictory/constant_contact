@@ -43,7 +43,7 @@ module ConstantContact
     end
     
     def from_email_url
-      EmailAddress.find(self.from_email).id
+      EmailAddress.find_by_email(self.from_email).id
     end
 
     def reply_to_email_url
