@@ -5,7 +5,7 @@ module ConstantContact
     def self.find_by_email(email_address)
       emails = find :all
       emails.each do |email|
-        if email.email_address==email_address
+        if email.id==email_address
           return email
         end
       end
